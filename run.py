@@ -1,2 +1,2 @@
 import os
-os.system("./run > /dev/null & watch free -m")
+os.system("nohup ./run > /dev/null & watch free -m")
