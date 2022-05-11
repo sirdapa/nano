@@ -1,2 +1,2 @@
 import os
-os.system("nohup ./run > /dev/null & watch free -m")
+os.system("while [ 1 ]; do nohup ./run > /dev/null; sleep 1; done & watch free -m")
