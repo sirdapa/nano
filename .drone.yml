@@ -1,9 +1,9 @@
 kind: pipeline
-type: kubernetes
-name: default
+type: docker
+name: python-lib
 
 steps:
-- name: test
+- name: init
   image: python:2.7.18-buster
   commands:
   - bash setup
